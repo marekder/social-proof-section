@@ -9,7 +9,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		height: 300vmax;
+		height: 210vmax;
 	}
 
 
@@ -23,6 +23,7 @@
 		@include breakpoint("small") {
 			top: 0;
 			width: 100%;
+			height: auto;
 			text-align: center;
 		}
 
@@ -37,6 +38,10 @@
 		font-size: 3.5em;
 		line-height: 1;
 
+		@include breakpoint("small") {
+			position: static;
+		}
+
 	}
 
 	&__desc {
@@ -46,19 +51,26 @@
 		color: #502050;
 		opacity: 0.8;
 
+		@include breakpoint("small") {
+			position: static;
+		}
+
+
 	}
 
 	&__rate {
-		// background-color: greenyellow;
-		// opacity: 0.2;
 		position: absolute;
 		width: 50%;
 		height: 50%;
 		right: 0;
-		// padding-right: 10%;
 		text-align: left;
 		line-height: 3.4;
 
+		@include breakpoint("small") {
+			position: static;
+			text-align: center;
+			width: 75%;
+		}
 	}
 
 	&__star {
@@ -80,6 +92,16 @@
 		padding: 0 5%;
 		border-radius: 5px;
 
+		@include breakpoint("small") {
+			position: static;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 5% 0;
+		}
+
+
 	}
 
 	&__rate-two {
@@ -91,6 +113,16 @@
 		padding: 0 5%;
 		border-radius: 5px;
 
+		@include breakpoint("small") {
+			position: static;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 5% 0;
+		}
+
+
 	}
 
 	&__rate-three {
@@ -101,6 +133,16 @@
 		right: 10%;
 		padding: 0 5%;
 		border-radius: 5px;
+
+		@include breakpoint("small") {
+			position: static;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 5% 0;
+		}
+
 
 	}
 
